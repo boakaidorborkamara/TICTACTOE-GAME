@@ -13,6 +13,23 @@ let back_btn = document.getElementById("back-btn");
 console.log(one_player_btn);
 let selected_player_mode = null;
 
+function executeGame(){
+    //show game instructions
+    read_instructions_btn.addEventListener('click', hideAndShowGameInstructions);
+
+    //hide game instructions
+    hide_instructions_btn.addEventListener('click', hideAndShowGameInstructions);
+
+    //select single player mode
+    one_player_btn.addEventListener('click', selectPlayerMode);
+
+    //select two player mode
+    two_player_btn.addEventListener('click', selectPlayerMode );
+
+    //go back to home
+    back_btn.addEventListener('click', selectPlayerMode);
+}
+
 // this function hide and show the game instructions
 function hideAndShowGameInstructions(){
     if(player_options_section.style.display !== "none"){
@@ -23,9 +40,7 @@ function hideAndShowGameInstructions(){
     else if(instructions_section.style.display === "flex"){
         instructions_section.style.display = "none";
         player_options_section.style.display = "flex";
-    }
-    
-    
+    } 
 }
 
 function selectPlayerMode(){
@@ -45,10 +60,8 @@ function selectPlayerMode(){
     }
 }
 
-//envoking hide n show game instructions functions on these button
-read_instructions_btn.addEventListener('click', hideAndShowGameInstructions);
-hide_instructions_btn.addEventListener('click', hideAndShowGameInstructions);
 
-one_player_btn.addEventListener('click', selectPlayerMode);
-two_player_btn.addEventListener('click', selectPlayerMode );
-back_btn.addEventListener('click', selectPlayerMode);
+//call game executer function
+executeGame();
+
+

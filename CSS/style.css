@@ -5,6 +5,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(27, 20, 20);
 }
 
 #wrapper{
@@ -37,6 +38,7 @@ header{
 
 header h1{
     font-size: 3rem;
+    color: rgb(209, 70, 6);
 }
 
 #player-options-section{
@@ -58,8 +60,8 @@ header h1{
 }
 
 #player-options-section button:hover{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: rgb(180, 59, 2);
     cursor: pointer;
     box-shadow: 1px 1px 10px rgb(136, 132, 132);
 }
@@ -77,12 +79,14 @@ header h1{
 
 #instructions-section h1{
     margin-bottom: 10px;
-    color: rgb(180, 59, 2);
+    color: white;
+    text-decoration: underline;
 }
 
 #instructions-section ul li{
     list-style-type: circle;
     margin-bottom: 20px;
+    color: white;
 }
 
 #instructions-section button{
@@ -101,8 +105,9 @@ header h1{
 
 #instructions-section button:hover{
     cursor: pointer;
-    background-color: black;
-    color: white;
+    background-color:white;
+    color: rgb(180, 59, 2);
+    box-shadow: 1px 1px 10px rgb(136, 132, 132);
 }
 
 /* player name selection section styling starts  */
@@ -115,6 +120,10 @@ header h1{
     display: none;
 }
 
+#player-name-selection-section div:nth-child(1n) p,h3{
+    color: white;
+}
+
 #player-name-selection-section div:nth-child(2n){
     margin-top: 20px;
     margin-bottom: 80px;
@@ -123,18 +132,21 @@ header h1{
 }
 
 #player-name-selection-section div:nth-child(2n) p{
-    color: rgb(141, 15, 15); 
+    color: white; 
+    border: 1px  solid rgb(27, 20, 20);
     padding: 5px;
     margin-right: 5px;
     font-weight: bolder;
     text-transform: uppercase;
     font-size: 1.5rem;
+    opacity: 0.2;
 }
 
 #player-name-selection-section div:nth-child(2n) p:hover{
     cursor: pointer;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    border-bottom: 1px dotted rgb(209, 70, 6);
+    border-top: 1px dotted rgb(209, 70, 6);
+    opacity: 1;
 }
 
 #player-name-selection-section div:nth-child(3n) button{
@@ -150,19 +162,26 @@ header h1{
 }
 
 #player-name-selection-section div:nth-child(3n) button:hover{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color:  rgb(180, 59, 2);
     cursor: pointer;
+    box-shadow: 1px 1px 10px rgb(136, 132, 132);
 }
 
 /* footer styling starts */
 footer p{
     opacity: 0.5;
+    color: white;
+}
+
+footer a{
+    color: tomato;
 }
 
 footer p:hover{
     opacity: 1;
 }
+
 
 /* responsive for phone screens */
 @media screen and (min-width:320px) and (max-width:425px){
@@ -190,7 +209,6 @@ footer p:hover{
         color: rgb(180, 59, 2);
     }
 }
-
 
 /* responsive for tablet screens */
 @media screen and (min-width:425px) and (max-width:768px){
