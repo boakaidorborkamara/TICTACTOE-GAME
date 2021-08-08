@@ -17,13 +17,13 @@
 
             <div id="player-options-section">
                 <button id="read-instructions-btn">
-                    Read Instructions
+                   <strong>READ INSTRUCTIONS</strong> 
                 </button>
-                <button id="one-player-btn">
-                    One Player Mode
+                <button id="one-player-btn" class="game-mode">
+                    <strong> PLAY COMPUTER</strong>
                 </button>
-                <button id="two-player-btn">
-                    Two Players Mode
+                <button id="two-player-btn" class="game-mode">
+                   <strong> PLAY HUMAN</strong>
                 </button>
             </div>
 
@@ -49,16 +49,45 @@
 
             <div id="player-name-selection-section">
                 <div>
-                    <h3>Would you like to be player X or O?</h3>
+                    <h3>Would you like to be player</h3>
                     <!-- <p>Click a box below to choose name.</p> -->
                 </div>
                 <div>
-                    <p id="player-X">Player X</p>
-                    <p id="player-O">Player O</p>
+                    <p id="player-X">X</p>
+                    <p id="player-O">O</p>
                 </div>
                 <div>
                     <button id="back-btn">
                         Back
+                    </button>
+                </div>
+            </div>
+
+            
+            <div id="game-board">
+                <div id="score-and-control-area">
+                    <p>PLAYER-X: 0</p>
+                    <p>PLAYER-O: 0</p>
+                </div>
+
+                <div id="all-boxes">
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                    <div class="box">3</div>
+                    <div class="box">4</div>
+                    <div class="box">5</div>
+                    <div class="box">6</div>
+                    <div class="box">7</div>
+                    <div class="box">8</div>
+                    <div class="box">9</div>
+                </div>
+
+                <div>
+                    <button id="">
+                        RESET
+                    </button>
+                    <button id="">
+                        PLAY AGAIN
                     </button>
                 </div>
             </div>
