@@ -17,14 +17,10 @@
 
             <div id="player-options-section">
                 <button id="read-instructions-btn">
-                   <strong>READ INSTRUCTIONS</strong> 
+                   <strong> >> READ INSTRUCTIONS << </strong> 
                 </button>
-                <button id="one-player-btn" class="game-mode">
-                    <strong> PLAY COMPUTER</strong>
-                </button>
-                <button id="two-player-btn" class="game-mode">
-                   <strong> PLAY HUMAN</strong>
-                </button>
+                <button id="one-player-btn" class="game-mode">PLAY COMPUTER</button>
+                <button id="two-player-btn" class="game-mode">PLAY HUMAN</button>
             </div>
 
             <div id="instructions-section">
@@ -66,8 +62,8 @@
             
             <div id="game-board">
                 <div id="score-and-control-area">
-                    <p>PLAYER-X: 0</p>
-                    <p>PLAYER-O: 0</p>
+                    <p id="first-player-name-in-score-board">FIRST PLAYER : <span>0</span></p>
+                    <p id="second-player-name-in-score-board">SECOND PLAYER : <span>0</span></p>
                 </div>
 
                 <div id="all-boxes">
@@ -82,11 +78,11 @@
                     <div class="box">9</div>
                 </div>
 
-                <div>
-                    <button id="">
+                <div id="game-board-btn-area">
+                    <button id="reset-btn">
                         RESET
                     </button>
-                    <button id="">
+                    <button id="play-agian-btn">
                         PLAY AGAIN
                     </button>
                 </div>

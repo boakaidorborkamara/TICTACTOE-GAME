@@ -38,7 +38,7 @@ header{
 
 header h1{
     font-size: 3rem;
-    color: rgb(209, 70, 6);
+    color: orange;
 }
 
 #player-options-section{
@@ -62,7 +62,7 @@ header h1{
 
 #player-options-section button:hover{
     background-color: white;
-    background-color: rgb(180, 59, 2);
+    background-color:orange;
     /* color: rgb(180, 59, 2); */
     cursor: pointer;
     box-shadow: 1px 1px 5px rgb(136, 132, 132);
@@ -107,8 +107,8 @@ header h1{
 
 #instructions-section button:hover{
     cursor: pointer;
-    background-color:white;
-    color: rgb(180, 59, 2);
+    background-color:orange;
+    color: black;
     box-shadow: 1px 1px 10px rgb(136, 132, 132);
 }
 
@@ -146,8 +146,8 @@ header h1{
 
 #player-name-selection-section div:nth-child(2n) p:hover{
     cursor: pointer;
-    border-bottom: 1.5px dotted rgb(209, 70, 6);
-    border-top: 1px dotted rgb(209, 70, 6);
+    border-bottom: 1.5px dotted orange;
+    border-top: 1px dotted orange;
     opacity: 1;
 }
 
@@ -165,10 +165,11 @@ header h1{
 
 #player-name-selection-section div:nth-child(3n) button:hover{
     background-color: white;
-    color:  rgb(180, 59, 2);
+    color:  orange;
     cursor: pointer;
     box-shadow: 1px 1px 10px rgb(136, 132, 132);
 }
+
 #game-board{
     display: grid;
     display: none;
@@ -185,6 +186,7 @@ header h1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     color: white;
+    color: rgb(32, 23, 23);
     margin-top: 30px;
     margin-bottom: 20px;
 }
@@ -194,13 +196,15 @@ header h1{
     justify-content: center;
     align-items: center;
     padding: 5px;
-    font-size: 3.5em;
+    font-size: 3.2em;
+    /* background-color: orange; */
     /* color: rgb(24, 20, 20); */
 }
 
 .box:hover{
     cursor: pointer;
 }
+
 
 /* drawing game board  */
 #all-boxes :nth-child(1){
@@ -241,14 +245,37 @@ header h1{
 
 /* game board drawing ends  */
 
+#game-board-btn-area{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#game-board-btn-area button{
+    font-size: 1em;
+    padding: 7px;
+    width: 30%;
+    border: 1px solid black;
+    font-weight: bolder;
+}
+
+#game-board-btn-area button:hover{
+    cursor: pointer;
+    background-color:orange;
+    color: black;
+    box-shadow: 1px 1px 7px rgb(136, 132, 132);
+}
+
 /* footer styling starts */
 footer p{
-    opacity: 0.5;
+    opacity: 0.2;
     color: white;
 }
 
 footer a{
-    color: tomato;
+    color: orange;
+    text-decoration: none;
 }
 
 footer p:hover{
@@ -279,7 +306,24 @@ footer p:hover{
 
     #instructions-section h1{
         margin-bottom: 5px;
-        color: rgb(180, 59, 2);
+        color: orange;
+    }
+
+    #game-board-btn-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    #game-board-btn-area button{
+        font-size: 1em;
+        padding: 7px;
+        width: 50%;
+        border: 1px solid black;
+        font-weight: bolder;
+        margin-bottom: 10px;
     }
 }
 
@@ -294,6 +338,23 @@ footer p:hover{
     #welcome-screen-section{
         width: 70%;
         height: 85vh;
+    }
+
+    #game-board-btn-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    #game-board-btn-area button{
+        font-size: 1em;
+        padding: 7px;
+        width: 50%;
+        border: 1px solid black;
+        font-weight: bolder;
+        margin-bottom: 10px;
     }
     
 /* 
